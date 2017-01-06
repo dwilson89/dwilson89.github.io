@@ -1,4 +1,0 @@
-.bg-1 {
-	background-color: #008080;
-	color: #ffffff;
-}

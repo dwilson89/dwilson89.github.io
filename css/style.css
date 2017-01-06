@@ -126,12 +126,13 @@ p a:hover {
 }
 
 .skillmeter {
-	width: 200px;
+	background-color: #C0C0C0;
 	height: 24px;
     position: relative;
     border: 1px solid #f1f1f1;
     border-radius: 4px;
     margin-bottom: 1em;
+    z-index:1;
 }
 
 .skillmeter > span {
@@ -139,19 +140,63 @@ p a:hover {
     height: 100%;
     border-radius: 4px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .skillmeter > span > span {
     margin-left: 4px;
-    color: #fff;
+    color: #000000;
+
 }
 
 .emerald > span {
     background-color: #2ecc71;
 }
 
+.grey > span {
+    background-color: #666362;
+}
 
+.light-coral > span {
+	background-color: #E77471;
+}
+
+
+.violet > span {
+	background-color: #8D38C9;
+
+}
+
+.pumpkin > span {
+	background-color: #F87217;
+}
+
+.cinnamon > span {
+	background-color: #C58917;
+}
+
+.mustard > span {
+	background-color: #FFDB58;
+}
+
+.light-steel-blue > span {
+	background-color: #728FCE;
+}
+
+.blanchedalmond > span {
+	background-color: #FFEBCD;
+}
+
+.teal > span {
+	background-color: #008080;
+}
+.dodger-blue > span {
+	background-color: #1589FF;
+}
+
+.maroon > span {
+	background-color: #810541;
+}
 
 li {
     display: list-item;
