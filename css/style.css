@@ -55,4 +55,112 @@
     color: #fff;
 }
 
-body { padding-top: 70px; }
+/*a.read-more-link {
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
+p a:hover {
+	text-decoration: none;
+	color: #008080 !important;
+}*/
+
+.no-list {
+	list-style: none;
+	margin: 0px;
+    padding: 0px;
+    
+}
+
+.label {
+	display: inline;
+    padding: .25em .6em;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.work li {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 2em;
+}
+
+.work li span {
+	float: right;
+}
+
+.work li p {
+    clear: both;
+}
+
+.work li h5 {
+    clear: both;
+}
+.work li h4 {
+    float: left;
+}
+
+.project-res {
+	clear: both;
+	 margin-left: 20px;
+}
+
+.project-res li {
+    border-bottom: 0px solid transparent;
+    margin-bottom: 0em;
+}
+
+.sub-project-res {
+	clear: both;
+	 margin-left: 20px;
+}
+
+.sub-project-res li {
+    border-bottom: 0px solid transparent;
+    margin-bottom: 0em;
+}
+
+.skillmeter {
+	width: 200px;
+	height: 24px;
+    position: relative;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.skillmeter > span {
+	display: block;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skillmeter > span > span {
+    margin-left: 4px;
+    color: #fff;
+}
+
+.emerald > span {
+    background-color: #2ecc71;
+}
+
+
+
+li {
+    display: list-item;
+}
+
+ul {
+	padding: 0;
+}
+
+body { 
+	padding-top: 70px; 
+}
