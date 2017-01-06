@@ -198,6 +198,47 @@ p a:hover {
 	background-color: #810541;
 }
 
+.contact-col > .contact-point:nth-child(n+2){
+	padding-top: 50px;
+}
+
+.contact-point > i {
+	font-size:48px; 
+	padding-bottom:20px;
+}
+
+.contact-point > span {
+	font-size:48px; 
+	padding-bottom:20px;
+}
+
+.contact-point > a {
+	font-size:48px; 
+	padding-bottom:20px;
+	color: #ffffff;
+}
+
+.contact-point > a {
+	font-size:48px; 
+	padding-bottom:20px;
+	color: #ffffff;
+}
+
+.contact-point a:hover {
+	color: #008080 !important;
+}
+
+.contact-point a:link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contact-point a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 li {
     display: list-item;
 }
