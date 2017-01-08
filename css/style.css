@@ -85,12 +85,13 @@ p a:hover {
     border-radius: .25em;
 }
 
-.work li {
-    border-bottom: 1px solid #f1f1f1;
+.work > li {
+	padding-bottom: 20px;
+    border-bottom: 1px solid #181818;
     margin-bottom: 2em;
 }
 
-.work li span {
+.work li > span {
 	float: right;
 }
 
@@ -107,7 +108,7 @@ p a:hover {
 
 .project-res {
 	clear: both;
-	 margin-left: 20px;
+	margin-left: 20px;
 }
 
 .project-res li {
@@ -301,6 +302,10 @@ p a:hover {
     color: #fff;
 }
 
+.tech-use {
+	clear: both;
+	padding-bottom: 10px;
+}
 
 li {
     display: list-item;
