@@ -302,9 +302,19 @@ p a:hover {
     color: #fff;
 }
 
+.contact-col {
+	padding-bottom:50px;
+
+}
+
 .tech-use {
 	clear: both;
 	padding-bottom: 10px;
+}
+
+.gallery > a > img {
+	padding: 5px;
+
 }
 
 li {
@@ -337,6 +347,8 @@ a:visited {
 a:hover {
 	color: #008080 !important;
 }*/
+
+
 
 ul {
 	padding: 0;
