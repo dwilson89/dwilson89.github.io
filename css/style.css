@@ -87,7 +87,7 @@ p a:hover {
 
 .work > li {
 	padding-bottom: 20px;
-    border-bottom: 1px solid #181818;
+    border-bottom: 1px solid #666362;
     margin-bottom: 2em;
 }
 
@@ -310,6 +310,33 @@ p a:hover {
 li {
     display: list-item;
 }
+
+/*.gitlink a:link {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.gitlink a {
+	color: #ffffff;
+}
+
+.gitlink a:hover {
+	color: #181818 !important;
+}*/
+
+/*a:link {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+	color: #008080 !important;
+}*/
 
 ul {
 	padding: 0;

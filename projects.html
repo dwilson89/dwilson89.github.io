@@ -33,6 +33,38 @@
         $(this).ekkoLightbox();
       });
 
+      function filterOutTech(tech) {
+        showAll();
+        var elems = document.getElementsByClassName("tech-use");
+        for(var i =0; i < elems.length; i++){
+          //check its children if it contains the tech
+        
+          var c = elems[i].childNodes;
+          //var for boolean
+          var contains = false;
+          for(var j =0; j < c.length; j++) {
+            //if it does, set to true
+            if(tech === c[j].innerHTML) {
+              contains = true;
+              break;
+            }
+            //break;
+          }
+            
+          //if false
+          if(!contains){
+            elems[i].parentNode.style.display = 'none';
+          } 
+            //turn off visibility for parent 
+        }
+      }
+
+      function showAll() {
+        var elems = document.getElementsByClassName("tech-use");
+        for(var i =0; i < elems.length; i++){
+           elems[i].parentNode.style.display = '';
+        }
+      }
     </script>
 
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8"/>
@@ -66,6 +98,9 @@
       <img src="img/profilepic2.png" class="img-responsive img-circle" style="display:inline" alt="Dustin Wilson">
 
       <h3>Browse my projects</h3>
+          
+      
+        
     </div>
 
     <div class="container-fluid bg-2 text-center">
@@ -75,62 +110,78 @@
       <ul class="list-inline">
 
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">C# <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="showAll()">Show All <span class="badge">13</span></button>
+        </li>
+
+        <li class="list-group-item">
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('C#')">C# <span class="badge">3</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">C++ <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('C++')">C++ <span class="badge">4</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Java <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Java')">Java <span class="badge">2</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">C <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('C')">C <span class="badge">5</span></button>
         </li>
-        <li class="list-group-item">
+        <!-- <li class="list-group-item">
           <button type="button" class="btn btn-primary">HTML <span class="badge">7</span></button>
         </li>
         <li class="list-group-item">
           <button type="button" class="btn btn-primary">CSS <span class="badge">7</span></button>
+        </li> -->
+        <!-- <li class="list-group-item">
+          <button type="button" class="btn btn-primary">Javascript <span class="badge">0</span></button>
+        </li> -->
+        <li class="list-group-item">
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Unity 3d')">Unity 3d <span class="badge">2</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Javascript <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Leap Motion')">Leap Motion <span class="badge">1</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Unity 3d <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Oculus Rift')">Oculus Rift <span class="badge">1</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Leap Motion <span class="badge">7</span></button>
-        </li>
-        <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Oculus Rift <span class="badge">7</span></button>
-        </li>
-        <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Arduino <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Arduino')">Arduino <span class="badge">1</span></button>
         </li>
 
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Unreal Engine <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Unreal Engine')">Unreal Engine <span class="badge">1</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">3ds Max <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('3ds Max')">3ds Max <span class="badge">1</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Maya <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Maya')">Maya <span class="badge">1</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">Photoshop <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('Photoshop')">Photoshop <span class="badge">1</span></button>
         </li>
         <li class="list-group-item">
-          <button type="button" class="btn btn-primary">After Effects <span class="badge">7</span></button>
+          <button type="button" class="btn btn-primary" onclick="filterOutTech('After Effects')">After Effects <span class="badge">1</span></button>
         </li>
 
       </ul>
+
+      
 
     </div>
 
     <div class="container-fluid bg-3 ">
       
       <h3>Projects</h3>
+
+      <p>On this page you will find a collection of finished projects, I have worked on over the years. For current developments please feel free to browse my github account by following the link below.</p>
+
+      <div class="gitlink">
+          <a href="https://github.com/dwilson89" title="Look through my Github profile" target="_blank" rel="nofollow">
+            <i class = "fa fa-github"></i> Dustin Wilson on Github
+          </a>
+      </div>
+
+      <br>
 
       <ul class= "no-list work">
         <li id="rec1">
@@ -145,12 +196,10 @@
               <b>Role: </b>Developer<br>
               <b>Project Description: </b> Task was to develop an application which simulated an animated and moving
               company logo when the "application" is not being used; to behave like a screen saver. This solution was designed to work  on a Windows based PC.<br>
-              <b>Code Description: </b> 
+              <b>Code Description: </b> This application was written using C++ in Visual Studios using win32 libraries for GLFW, OpenGL, GLEW, SOIL. I designed it to be a 2d animation ion an orthographic view, and used 8 png files (animation frames).
+              
               The code was developed with the following assumptions:
               <ul class="project-res">
-                <li>The use of the following win32 libraries - GLFW, OpenGL, GLEW, SOIL</li>
-                <li>Assumption the animation was 2d, and 8 png files (animation frame) were to be used; Note, I obtained a simple 8 frame 2D animation off a colleague.</li> 
-                <li>Following the above assumption I assumed an orthographic view would be acceptable.</li>
                 <li>Assumed a minimum window size would be 800x600, it has been designed to be resized to larger dimensions.</li>
                 <li>Assumed anywhere beyond the edges of the screen, meant just sitting anywhere on the outside border, e.g.
                   <ul class="sub-project-res">
